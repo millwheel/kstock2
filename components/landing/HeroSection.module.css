@@ -1,0 +1,128 @@
+.hero {
+  padding-block: var(--space-xxxl) var(--space-56);
+  background-color: var(--color-bg-page);
+  overflow: hidden;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxxl);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eyebrow {
+  font-size: var(--text-body-size);
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-base);
+}
+
+.headline {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-lg);
+}
+
+.headlineLine {
+  display: block;
+}
+
+.sub {
+  font-size: var(--text-body-large-size);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  max-width: 46ch;
+  margin-bottom: var(--space-xxl);
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xxl);
+}
+
+.ctas :global(.button) {
+  flex: 1 1 auto;
+  min-width: 160px;
+}
+
+.trust {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-base);
+  width: 100%;
+  border-top: 1px solid var(--color-border-subtle);
+  padding-top: var(--space-xl);
+}
+
+.trustItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.trustTitle {
+  font-size: var(--text-body-large-size);
+  font-weight: 700;
+}
+
+.trustDesc {
+  font-size: var(--text-body-size);
+  color: var(--color-text-secondary);
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .headline {
+    font-size: 52px;
+  }
+  .trust {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ctas :global(.button) {
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero {
+    padding-block: var(--space-64) var(--space-section);
+  }
+  .inner {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-64);
+  }
+  .copy {
+    flex: 1 1 55%;
+  }
+  .visual {
+    flex: 1 1 45%;
+  }
+  .headline {
+    font-size: 60px;
+  }
+  .trust {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+@media (min-width: 1100px) {
+  .headline {
+    font-size: 68px;
+  }
+}

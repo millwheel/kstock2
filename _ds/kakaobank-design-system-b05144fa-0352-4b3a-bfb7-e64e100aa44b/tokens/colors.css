@@ -1,0 +1,50 @@
+/* KakaoBank — Color Tokens
+   Source: KakaoBank Brand Identity Guidelines V2.0 + live DOM (kakaobank.com), 2026-05-08
+   Single-yellow discipline: #FFE300 exactly. Never substitute #FAE100 / #FEE500 / #FFCC00.
+*/
+:root {
+  /* ---- Base palette ---- */
+  --kb-yellow: #ffe300;         /* KakaoBank Yellow — PANTONE Yellow 012 C/U — brand + product moments only */
+  --kb-black: #1e1e1e;          /* Near Black — primary text, family resemblance to Kakao parent */
+  --kb-white: #ffffff;
+
+  --kb-gray: #a3a3a3;           /* PANTONE Cool Gray 6 — secondary text, captions */
+  --kb-gray-light: #cccccc;     /* PANTONE Cool Gray 3 — borders, dividers, disabled fills */
+  --kb-gray-inactive-tab: #888888;
+  --kb-surface-fill: #f7f7f7;   /* section backgrounds, disabled bg */
+  --kb-surface-subtle: #f9f9f9; /* footer surface */
+  --kb-border-subtle: #e6e6e6;  /* dense list dividers */
+
+  /* ---- Semantic (banking-functional; never brand-substitutable) ---- */
+  --kb-error: #e02000;
+  --kb-error-wash: rgba(224, 32, 0, 0.12);
+  --kb-success: #0fbe6c;
+  --kb-success-wash: rgba(15, 190, 108, 0.12);
+  --kb-warning: #ff9800;
+  --kb-link: #007aff;
+
+  --kb-overlay: rgba(0, 0, 0, 0.4);
+
+  /* ---- Semantic aliases ---- */
+  --color-bg-page: var(--kb-white);
+  --color-bg-surface: var(--kb-white);
+  --color-bg-fill: var(--kb-surface-fill);
+  --color-bg-subtle: var(--kb-surface-subtle);
+  --color-bg-brand: var(--kb-yellow);
+  --color-bg-inverse: var(--kb-black);
+
+  --color-text-heading: var(--kb-black);
+  --color-text-body: var(--kb-black);
+  --color-text-secondary: var(--kb-gray);
+  --color-text-inactive: var(--kb-gray-inactive-tab);
+  --color-text-on-brand: var(--kb-black); /* NEVER white-on-yellow */
+  --color-text-on-inverse: var(--kb-white);
+  --color-text-error: var(--kb-error);
+  --color-text-success: var(--kb-success);
+  --color-text-link: var(--kb-link);
+
+  --color-border-default: var(--kb-gray-light);
+  --color-border-subtle: var(--kb-border-subtle);
+  --color-border-focus: var(--kb-black);
+  --color-border-error: var(--kb-error);
+}

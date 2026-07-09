@@ -1,0 +1,47 @@
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  counter-reset: step;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-fill);
+}
+
+.badge {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background-color: var(--kb-black);
+  color: var(--kb-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-body-large-size);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: var(--space-xs);
+}
+
+.stepTitle {
+  font-size: var(--text-title-size);
+  font-weight: 700;
+}
+
+.stepDesc {
+  font-size: var(--text-body-size);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

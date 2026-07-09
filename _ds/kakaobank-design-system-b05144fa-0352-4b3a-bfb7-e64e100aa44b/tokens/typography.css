@@ -1,0 +1,20 @@
+/* KakaoBank — Typography Tokens
+   One typeface (Pretendard Variable), three weights in practice: 400 / 600 / 700(-800 hero only).
+   Korean-tuned line-heights — do not override with Latin-tuned values. No italics anywhere.
+*/
+:root {
+  --font-sans: "Pretendard Variable", "Pretendard", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-mono: "SF Mono", ui-monospace, "Menlo", monospace;
+
+  /* size / weight / line-height per role */
+  --text-hero-mega-size: 90px;   --text-hero-mega-weight: 800; --text-hero-mega-lh: 1.10;
+  --text-display-size: 42px;     --text-display-weight: 700;   --text-display-lh: 1.25;
+  --text-section-title-size: 32px; --text-section-title-weight: 700; --text-section-title-lh: 1.30;
+  --text-heading-size: 20px;     --text-heading-weight: 600;   --text-heading-lh: 1.40;
+  --text-title-size: 18px;       --text-title-weight: 600;     --text-title-lh: 1.44;
+  --text-body-large-size: 16px;  --text-body-large-weight: 400; --text-body-large-lh: 1.50;
+  --text-body-size: 14px;        --text-body-weight: 400;      --text-body-lh: 1.55;
+  --text-caption-size: 13px;     --text-caption-weight: 400;   --text-caption-lh: 1.55;
+  --text-micro-size: 12px;       --text-micro-weight: 400;     --text-micro-lh: 1.50;
+}

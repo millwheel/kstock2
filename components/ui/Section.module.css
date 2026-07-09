@@ -1,0 +1,26 @@
+.section {
+  padding-block: var(--space-56);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-block: var(--space-section);
+  }
+}
+
+.page {
+  background-color: var(--color-bg-page);
+}
+
+.fill {
+  background-color: var(--color-bg-fill);
+}
+
+.subtle {
+  background-color: var(--color-bg-subtle);
+}
+
+.inverse {
+  background-color: var(--color-bg-inverse);
+  color: var(--color-text-on-inverse);
+}

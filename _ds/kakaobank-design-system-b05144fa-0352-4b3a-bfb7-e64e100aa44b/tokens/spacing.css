@@ -1,0 +1,17 @@
+/* KakaoBank — Spacing Tokens. Base unit 4px. */
+:root {
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-base: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+  --space-xxxl: 40px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-section: 80px;
+
+  --layout-mobile-gutter: 20px;
+  --layout-web-max: 1360px;
+}

@@ -1,0 +1,272 @@
+.phone {
+  --seg-반도체: var(--kb-black);
+  --seg-인터넷: var(--kb-gray);
+  --seg-2차전지: #6f6f6f;
+  --seg-현금: var(--kb-gray-light);
+
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 300 / 620;
+  margin-inline: auto;
+  background-color: var(--kb-black);
+  border-radius: 40px;
+  padding: 12px;
+  position: relative;
+  box-shadow: var(--shadow-subtle);
+}
+
+.notch {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96px;
+  height: 22px;
+  background-color: var(--kb-black);
+  border-radius: var(--radius-full);
+  z-index: 2;
+}
+
+.screen {
+  height: 100%;
+  background-color: var(--kb-surface-fill);
+  border-radius: 30px;
+  padding: 40px 12px 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.appbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 4px;
+}
+
+.appTitle {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.bell {
+  font-size: 15px;
+}
+
+/* market summary */
+.market {
+  display: flex;
+  gap: 8px;
+}
+
+.marketRow {
+  flex: 1;
+  background-color: var(--kb-white);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.marketLabel {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+}
+
+.marketVal {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* generic cards */
+.card {
+  background-color: var(--kb-white);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cardMore {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+/* watchlist */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  background-color: var(--kb-surface-fill);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.stockName {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 600;
+  flex: 1;
+  min-width: 0;
+}
+
+.ticker {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+.stockPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.price {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.changePill {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* allocation bar */
+.bar {
+  display: flex;
+  height: 10px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.barSeg[data-seg="반도체"] {
+  background-color: var(--seg-반도체);
+}
+.barSeg[data-seg="인터넷"] {
+  background-color: var(--seg-인터넷);
+}
+.barSeg[data-seg="2차전지"] {
+  background-color: var(--seg-2차전지);
+}
+.barSeg[data-seg="현금"] {
+  background-color: var(--seg-현금);
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.legendDot[data-seg="반도체"] {
+  background-color: var(--seg-반도체);
+}
+.legendDot[data-seg="인터넷"] {
+  background-color: var(--seg-인터넷);
+}
+.legendDot[data-seg="2차전지"] {
+  background-color: var(--seg-2차전지);
+}
+.legendDot[data-seg="현금"] {
+  background-color: var(--seg-현금);
+}
+
+.legendName {
+  flex: 1;
+  color: var(--color-text-body);
+}
+
+.legendPct {
+  font-weight: 700;
+}
+
+/* alert */
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--kb-yellow);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  margin-top: auto;
+}
+
+.alertIcon {
+  font-size: 16px;
+}
+
+.alertText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.alertTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-on-brand);
+}
+
+.alertDesc {
+  font-size: 11px;
+  color: var(--color-text-on-brand);
+  line-height: 1.4;
+}
+
+/* semantic up/down */
+.up {
+  color: var(--color-up);
+}
+.down {
+  color: var(--color-down);
+}
+.flat {
+  color: var(--color-text-secondary);
+}

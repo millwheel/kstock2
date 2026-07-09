@@ -1,0 +1,67 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  transition:
+    opacity var(--motion-fast) var(--ease-standard),
+    background-color var(--motion-fast) var(--ease-standard),
+    border-color var(--motion-fast) var(--ease-standard);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.md {
+  height: 48px;
+  padding-inline: var(--space-xl);
+  font-size: var(--text-body-large-size);
+}
+
+.lg {
+  height: 56px;
+  padding-inline: var(--space-xxl);
+  font-size: var(--text-title-size);
+}
+
+/* press state is opacity — there is no darker yellow in the palette */
+.button:active {
+  opacity: 0.85;
+}
+
+.yellow {
+  background-color: var(--color-bg-brand);
+  color: var(--color-text-on-brand);
+}
+
+.black {
+  background-color: var(--color-bg-inverse);
+  color: var(--color-text-on-inverse);
+}
+
+.black:hover {
+  opacity: 0.88;
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--color-text-body);
+  border-color: var(--color-border-default);
+}
+
+.outline:hover {
+  border-color: var(--color-border-focus);
+}
+
+/* on inverse (dark) sections the outline needs a light border */
+:global(.inverseCtx) .outline {
+  color: var(--color-text-on-inverse);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+:global(.inverseCtx) .outline:hover {
+  border-color: var(--kb-white);
+}

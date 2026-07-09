@@ -1,0 +1,13 @@
+/* KakaoBank — Web font.
+   Pretendard Variable is the ONLY typeface on web (no custom brand display font).
+   No local binary was provided in the source materials, so this loads the official
+   open-source Pretendard Variable distribution from its public CDN (jsDelivr / orioncactus/pretendard).
+   If the brand later supplies licensed local font files, replace the src below with local url()s. */
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2")
+    format("woff2-variations");
+}

@@ -1,0 +1,8 @@
+/* KakaoBank — Radius Tokens. 12px is THE family radius (buttons, cards, inputs, avatars-as-squares). */
+:root {
+  --radius-sm: 8px;      /* inline tags, small chips */
+  --radius-md: 12px;     /* buttons, inputs, product cards, avatars (rounded squares — never circles) */
+  --radius-lg: 16px;     /* section fill cards, debit card visualization */
+  --radius-sheet: 20px;  /* bottom sheet top corners */
+  --radius-full: 9999px; /* status badges, notification dots, segmented control */
+}

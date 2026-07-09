@@ -1,0 +1,108 @@
+/* Design tokens — adapted from the KakaoBank design system reference.
+   Single-yellow discipline (#FFE300, brand/CTA only), near-black text, flat surfaces.
+   Status colors are strictly functional; yellow is never used for up/down state. */
+
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2")
+    format("woff2-variations");
+}
+
+:root {
+  /* ---- Base palette ---- */
+  --kb-yellow: #ffe300;
+  --kb-black: #1e1e1e;
+  --kb-white: #ffffff;
+
+  --kb-gray: #a3a3a3;
+  --kb-gray-light: #cccccc;
+  --kb-gray-inactive-tab: #888888;
+  --kb-surface-fill: #f7f7f7;
+  --kb-surface-subtle: #f9f9f9;
+  --kb-border-subtle: #e6e6e6;
+
+  /* ---- Semantic (functional only) ---- */
+  --kb-error: #e02000; /* 하락 */
+  --kb-error-wash: rgba(224, 32, 0, 0.12);
+  --kb-success: #0fbe6c; /* 상승 */
+  --kb-success-wash: rgba(15, 190, 108, 0.12);
+  --kb-warning: #ff9800;
+  --kb-link: #007aff;
+  --kb-overlay: rgba(0, 0, 0, 0.4);
+
+  /* ---- Semantic aliases ---- */
+  --color-bg-page: var(--kb-white);
+  --color-bg-surface: var(--kb-white);
+  --color-bg-fill: var(--kb-surface-fill);
+  --color-bg-subtle: var(--kb-surface-subtle);
+  --color-bg-brand: var(--kb-yellow);
+  --color-bg-inverse: var(--kb-black);
+
+  --color-text-heading: var(--kb-black);
+  --color-text-body: var(--kb-black);
+  --color-text-secondary: var(--kb-gray);
+  --color-text-inactive: var(--kb-gray-inactive-tab);
+  --color-text-on-brand: var(--kb-black); /* NEVER white-on-yellow */
+  --color-text-on-inverse: var(--kb-white);
+  --color-up: var(--kb-success);
+  --color-down: var(--kb-error);
+
+  --color-border-default: var(--kb-gray-light);
+  --color-border-subtle: var(--kb-border-subtle);
+  --color-border-focus: var(--kb-black);
+
+  /* ---- Typography ---- */
+  --font-sans: "Pretendard Variable", "Pretendard", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-mono: "SF Mono", ui-monospace, "Menlo", monospace;
+
+  --text-hero-mega-size: 90px;
+  --text-display-size: 42px;
+  --text-section-title-size: 32px;
+  --text-heading-size: 20px;
+  --text-title-size: 18px;
+  --text-body-large-size: 16px;
+  --text-body-size: 14px;
+  --text-caption-size: 13px;
+  --text-micro-size: 12px;
+
+  /* ---- Spacing (4px base) ---- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-base: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+  --space-xxxl: 40px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-section: 80px;
+
+  --layout-mobile-gutter: 20px;
+  --layout-web-max: 1360px;
+
+  /* ---- Radius ---- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-sheet: 20px;
+  --radius-full: 9999px;
+
+  /* ---- Shadow (used sparingly) ---- */
+  --shadow-none: none;
+  --shadow-whisper: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-sheet: 0 -2px 16px rgba(0, 0, 0, 0.08);
+
+  /* ---- Motion ---- */
+  --motion-fast: 150ms;
+  --motion-standard: 250ms;
+  --motion-page: 300ms;
+  --ease-enter: cubic-bezier(0, 0, 0.2, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}

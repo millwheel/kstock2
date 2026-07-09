@@ -1,0 +1,8 @@
+/* KakaoBank — Elevation Tokens. Corporate site is entirely flat; shadows used sparingly in-app.
+   Shadows are always neutral — yellow never casts a yellow-tinted shadow. */
+:root {
+  --shadow-none: none;
+  --shadow-whisper: 0 1px 2px rgba(0, 0, 0, 0.04);   /* active segmented-tab pip, inline chip */
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.06);     /* floating action button, tooltip */
+  --shadow-sheet: 0 -2px 16px rgba(0, 0, 0, 0.08);    /* bottom sheets, modal dialogs */
+}

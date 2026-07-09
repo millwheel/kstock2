@@ -1,0 +1,13 @@
+/* KakaoBank — Motion Tokens. Spring overshoot reserved for success confirmations only. */
+:root {
+  --motion-instant: 0ms; /* @kind other */
+  --motion-fast: 150ms; /* @kind other */
+  --motion-standard: 250ms; /* @kind other */
+  --motion-success: 350ms; /* @kind other */
+  --motion-page: 300ms; /* @kind other */
+
+  --ease-enter: cubic-bezier(0.0, 0.0, 0.2, 1); /* @kind other */
+  --ease-exit: cubic-bezier(0.4, 0.0, 1, 1); /* @kind other */
+  --ease-standard: cubic-bezier(0.4, 0.0, 0.2, 1); /* @kind other */
+  /* spring used only via JS/Framer-style config in success confirmations: mass 1, stiffness 380, damping 28 */
+}

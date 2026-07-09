@@ -1,0 +1,51 @@
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  color: var(--color-text-body);
+  font-weight: 600;
+}
+
+.question {
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-base);
+}
+
+.card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.num {
+  font-size: var(--text-body-size);
+  font-weight: 800;
+  color: var(--color-text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.cardTitle {
+  font-size: var(--text-heading-size);
+  font-weight: 700;
+}
+
+.cardDesc {
+  font-size: var(--text-body-size);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
