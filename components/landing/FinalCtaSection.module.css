@@ -37,6 +37,15 @@
   flex-wrap: wrap;
   gap: var(--space-md);
   justify-content: center;
+  width: 100%;
+  margin-top: var(--space-sm);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.contactFormWrap {
+  width: 100%;
+  margin-top: var(--space-sm);
 }
 
 @media (min-width: 768px) {

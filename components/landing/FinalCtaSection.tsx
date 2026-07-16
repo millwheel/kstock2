@@ -3,6 +3,7 @@
 import { Apple, Play } from "lucide-react";
 import { Section } from "../ui/Section";
 import { Button } from "../ui/Button";
+import { ContactForm } from "./ContactForm";
 import { finalCta } from "@/lib/landing-content";
 import { trackCtaClick } from "@/lib/analytics";
 import styles from "./FinalCtaSection.module.css";
@@ -19,6 +20,10 @@ export function FinalCtaSection() {
           ))}
         </h2>
         <p className={styles.subtitle}>{finalCta.subtitle}</p>
+
+        <div className={styles.contactFormWrap}>
+          <ContactForm />
+        </div>
 
         <div className={styles.primaryRow}>
           <Button
