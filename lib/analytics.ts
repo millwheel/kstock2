@@ -10,7 +10,8 @@ export type AnalyticsEvent =
   | { name: "cta_click"; id: string; location: string }
   | { name: "scroll_depth"; percent: number }
   | { name: "faq_reach" }
-  | { name: "faq_toggle"; question: string; open: boolean };
+  | { name: "faq_toggle"; question: string; open: boolean }
+  | { name: "news_search"; query: string; source: "preset" | "input" };
 
 export function track(event: AnalyticsEvent): void {
   if (typeof window === "undefined") return;

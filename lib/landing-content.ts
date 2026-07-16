@@ -80,6 +80,20 @@ export const solution = {
   ],
 };
 
+export const newsExplorer = {
+  eyebrow: "실시간 미리보기",
+  title: "종목을 고르면 관련 뉴스를 바로 모아드려요",
+  subtitle:
+    "관심 있는 종목을 선택하면, 앱이 어떻게 뉴스를 모아 톤을 태그해 보여주는지 지금 바로 확인해보세요.",
+  presets: ["삼성전자", "SK하이닉스", "NAVER", "카카오", "코스피", "이차전지"],
+  placeholder: "종목명을 입력해보세요 (예: 삼성전자)",
+  searchLabel: "종목 뉴스 검색",
+  searchButton: "뉴스 보기",
+  emptyHint: "위 종목을 눌러보거나 관심 종목을 직접 입력해보세요.",
+  disclaimer:
+    "뉴스 출처: 네이버 검색. 호재·악재 태그는 제목 키워드에 기반한 참고용 표시로, 투자 판단의 근거가 아닙니다.",
+};
+
 export const features = {
   title: "핵심 기능",
   subtitle: "판단에 필요한 것만, 군더더기 없이.",
