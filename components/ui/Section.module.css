@@ -1,5 +1,5 @@
 .section {
-  padding-block: var(--space-56);
+  padding-block: 48px;
 }
 
 @media (min-width: 768px) {

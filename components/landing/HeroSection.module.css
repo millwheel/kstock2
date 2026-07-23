@@ -1,5 +1,5 @@
 .hero {
-  padding-block: var(--space-xxxl) var(--space-56);
+  padding-block: var(--space-xxl) 48px;
   background-color: var(--color-bg-page);
   overflow: hidden;
 }
@@ -24,7 +24,7 @@
 }
 
 .headline {
-  font-size: 40px;
+  font-size: clamp(36px, 10.5vw, 40px);
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -51,8 +51,8 @@
 }
 
 .ctas :global(.button) {
-  flex: 1 1 auto;
-  min-width: 160px;
+  flex: 1 1 100%;
+  width: 100%;
 }
 
 .trust {
@@ -83,6 +83,7 @@
 .visual {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 @media (min-width: 600px) {

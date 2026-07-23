@@ -5,8 +5,6 @@
  */
 
 export const RESERVATION_HREF = process.env.NEXT_PUBLIC_RESERVATION_URL || "#reservation";
-export const APP_STORE_HREF = process.env.NEXT_PUBLIC_APP_STORE_URL || "#reservation";
-export const PLAY_STORE_HREF = process.env.NEXT_PUBLIC_PLAY_STORE_URL || "#reservation";
 
 export const brand = {
   name: "한눈",
@@ -162,9 +160,6 @@ export const trust = {
 export const finalCta = {
   title: "내 종목의 중요한 순간을\n놓치지 마세요",
   subtitle: "사전예약하고 정식 출시 소식을 가장 먼저 받아보세요.",
-  primary: { label: "지금 시작하기", href: RESERVATION_HREF, id: "final_primary" },
-  appStore: { label: "App Store", href: APP_STORE_HREF, id: "final_appstore" },
-  playStore: { label: "Google Play", href: PLAY_STORE_HREF, id: "final_playstore" },
 };
 
 export const faq = {

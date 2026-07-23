@@ -82,8 +82,8 @@
   --space-64: 64px;
   --space-section: 80px;
 
-  --layout-mobile-gutter: 20px;
-  --layout-web-max: 1360px;
+  --layout-mobile-gutter: clamp(16px, 5vw, 20px);
+  --layout-web-max: 1120px;
 
   /* ---- Radius ---- */
   --radius-sm: 8px;

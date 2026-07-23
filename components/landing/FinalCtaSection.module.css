@@ -24,28 +24,23 @@
   max-width: 48ch;
 }
 
-.primaryRow {
-  margin-top: var(--space-sm);
-}
-
-.primaryRow :global(.button) {
-  min-width: 220px;
-}
-
-.storeRow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-md);
-  justify-content: center;
-  width: 100%;
-  margin-top: var(--space-sm);
-  padding-top: var(--space-lg);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-
 .contactFormWrap {
   width: 100%;
   margin-top: var(--space-sm);
+}
+
+@media (max-width: 479px) {
+  .wrap {
+    gap: var(--space-base);
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: var(--text-body-size);
+  }
 }
 
 @media (min-width: 768px) {
