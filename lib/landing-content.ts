@@ -18,6 +18,7 @@ export const nav = [
   { label: "기능", href: "#features" },
   { label: "사용 흐름", href: "#how-it-works" },
   { label: "FAQ", href: "#faq" },
+  { label: "후기", href: "/reviews" },
   { label: "사전예약", href: "#reservation" },
 ];
 
