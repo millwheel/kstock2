@@ -1,0 +1,108 @@
+.form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-base);
+  padding: var(--space-xxl);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-subtle);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--text-section-title-size);
+  font-weight: 800;
+  color: var(--color-text-heading);
+}
+
+.subtitle {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--text-body-size);
+  color: var(--color-text-secondary);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.label {
+  font-size: var(--text-caption-size);
+  font-weight: 600;
+  color: var(--color-text-body);
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: var(--text-body-large-size);
+  color: var(--color-text-body);
+  background: var(--color-bg-page);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  transition: border-color 0.15s ease;
+}
+
+.input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+}
+
+.input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit {
+  margin-top: var(--space-xs);
+  width: 100%;
+  padding: 14px 20px;
+  font-family: inherit;
+  font-size: var(--text-body-large-size);
+  font-weight: 700;
+  color: var(--color-text-on-brand);
+  background: var(--color-bg-brand);
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.15s ease;
+}
+
+.submit:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.toggle {
+  font-family: inherit;
+  font-size: var(--text-body-size);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle:hover:not(:disabled) {
+  color: var(--color-text-body);
+  text-decoration: underline;
+}
+
+.error {
+  margin: 0;
+  font-size: var(--text-caption-size);
+  color: var(--kb-error);
+}

@@ -2,6 +2,7 @@ import { Header } from "@/components/landing/Header";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { ProblemSection } from "@/components/landing/ProblemSection";
 import { SolutionSection } from "@/components/landing/SolutionSection";
+import { NewsSection } from "@/components/landing/NewsSection";
 import { FeatureHighlights } from "@/components/landing/FeatureHighlights";
 import { HowItWorks } from "@/components/landing/HowItWorks";
 import { TrustSection } from "@/components/landing/TrustSection";
@@ -21,6 +22,7 @@ export default function Home() {
         <HeroSection />
         <ProblemSection />
         <SolutionSection />
+        <NewsSection />
         <FeatureHighlights />
         <HowItWorks />
         <TrustSection />
